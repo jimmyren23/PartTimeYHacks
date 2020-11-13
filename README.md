@@ -1,4 +1,5 @@
 # PartTimeYHacks
+Link: https://devpost.com/software/parttime-t0pw5v/edit
 
 ## Inspiration
 Our video is in the attached google drive folder link at the bottom if the youtube link in devpost isn't loading.
