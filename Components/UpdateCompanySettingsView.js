@@ -18,6 +18,7 @@ import {FooterView} from './Footer';
 import {ScrollView} from 'react-native-gesture-handler';
 import {HeaderView} from './Header';
 import storage from '@react-native-firebase/storage';
+
 export function UpdateCompanySettingsView() {
   const [email, setEmail] = useState('');
   const [newName, setName] = useState('');
@@ -27,6 +28,7 @@ export function UpdateCompanySettingsView() {
   const [password, setPassword] = useState('');
   const [success, setSuccess] = useState('');
   const navigation = useNavigation();
+
   var user = auth().currentUser;
   getUserDoc().then((result) => {
     if (result !== undefined) {
@@ -49,7 +51,7 @@ export function UpdateCompanySettingsView() {
 
   async function handleEmailChange(emailInput) {
     await firestore()
-     .collection('companies')
+      .collection('companies')
       .doc(user.uid)
       .update({email: emailInput});
     setSuccess('Succesful Change!');

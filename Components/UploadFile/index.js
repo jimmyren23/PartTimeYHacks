@@ -1,12 +1,5 @@
 import React, {useState} from 'react';
-import {
-  Button,
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  Text,
-  Image,
-} from 'react-native';
+import {View, StyleSheet, TouchableOpacity, Text, Image} from 'react-native';
 import ImagePicker from 'react-native-image-picker';
 import {imagePickerOptions} from '../../utils';
 import DocumentPicker from 'react-native-document-picker';

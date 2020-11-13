@@ -5,7 +5,7 @@ import {
   SafeAreaView,
   StyleSheet,
   TextInput,
-  TouchableOpacity, 
+  TouchableOpacity,
   Image,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
@@ -24,10 +24,7 @@ export function LoginView() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.title}>
-        <Image
-          style={styles.image}
-          source={require('./img/logo.png')}
-        />
+        <Image style={styles.image} source={require('./img/logo.png')} />
       </View>
 
       <View style={styles.loginInfoView}>
@@ -100,10 +97,6 @@ export function LoginView() {
 }
 
 const styles = StyleSheet.create({
-  image: {
-    width: 390,
-    height: 100,
-  },
   sameLine: {
     display: 'flex',
     flexDirection: 'row',
@@ -122,6 +115,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     flex: 1,
     backgroundColor: 'white',
+  },
+  image: {
+    width: 390,
+    height: 100,
   },
   title: {
     fontSize: 60,

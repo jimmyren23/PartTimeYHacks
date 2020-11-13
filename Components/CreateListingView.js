@@ -15,6 +15,7 @@ import Geolocation from '@react-native-community/geolocation';
 import {newListing} from './backend';
 import {useNavigation} from '@react-navigation/native';
 import Geocoder from 'react-native-geocoding';
+
 const key = 'AIzaSyB3CEpguc8hsupRN6ju9d0Dlb1wFR2P1y0';
 Geocoder.init(key);
 

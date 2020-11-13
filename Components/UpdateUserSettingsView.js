@@ -216,15 +216,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#94BAEB',
   },
-  button: {
-    marginTop: 30,
-    padding: 10,
-    borderWidth: 0,
-    marginHorizontal: 110,
-    backgroundColor: '#94BAEB',
-    borderRadius: 5,
-    marginBottom: 10,
-  },
   innerButton: {
     textAlign: 'center',
     fontWeight: 'bold',

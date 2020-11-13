@@ -3,7 +3,6 @@ import {
   View,
   Text,
   FlatList,
-  Button,
   Image,
   TouchableOpacity,
 } from 'react-native';
@@ -13,6 +12,7 @@ import firestore from '@react-native-firebase/firestore';
 import auth from '@react-native-firebase/auth';
 import {HeaderView} from './Header';
 import {FooterView} from './Footer';
+
 export function CompanyListingsView() {
   const [listings, setListings] = useState([]);
   const navigation = useNavigation();
@@ -152,7 +152,6 @@ const styles = StyleSheet.create({
     elevation: 6,
     shadowRadius: 2,
     shadowOffset: {width: 1, height: 3},
-    marginBottom: 5,
   },
   container: {
     display: 'flex',
